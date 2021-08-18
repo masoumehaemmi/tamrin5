@@ -1,38 +1,25 @@
-import turtle 
+import turtle
+import time
 
-amul=turtle.Turtle()
-amul.shape()
-amul.shape("turtle")
-amul.color("blue","green")
-amul.goto(0,0)
-amul.forward(50)
-amul.speed(5)
-amul.up
-amul.goto(25,50)
-amul.speed(5)
-amul.down
-amul.goto(0,0)
-amul.speed(10)
-amul.penup()
-amul.goto(-15,-15)
-amul.pendown()
-amul.forward(80)
-amul.up
-amul.goto(65,60)
-amul.backward(80)
-amul.down
-amul.goto(-15,-15)
-amul.penup()
-amul.goto(-20,-25)
-amul.pendown()
-amul.forward(90)
-amul.goto(75,70)
-#amul.forward(50)
-amul.goto(20,125)
-amul.goto(-30,70)
-amul.goto(-20,-25)
+t=turtle.Turtle()
+t.shape("turtle")
+forwar=20
+lef=30
+color =["pink","purple","orange","yellow","green","blue",]
+azlla =[3 , 4, 5, 6, 7]
+angles= [120, 90, 77 ,60 ,50 ]
 
+for i in range (5):
+    t.pencolor(color[1%5])
+    
+    for j in azlla:
+    
+        t.forward(100)
+        t.left(angles[i])
+       
 
+t.pendown()
+t.setpos(lef ,3* forwar)
+t.penup()
 
-
-
+time.sleep(3)
